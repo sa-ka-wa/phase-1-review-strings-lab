@@ -2,12 +2,12 @@
   "stats": {
     "suites": 5,
     "tests": 10,
-    "passes": 4,
+    "passes": 7,
     "pending": 0,
-    "failures": 6,
-    "start": "2025-03-05T12:25:09.016Z",
-    "end": "2025-03-05T12:25:09.763Z",
-    "duration": 747
+    "failures": 3,
+    "start": "2025-03-23T17:59:23.663Z",
+    "end": "2025-03-23T17:59:24.076Z",
+    "duration": 413
   },
   "tests": [
     {
@@ -15,34 +15,30 @@
       "fullTitle": "index.js currentUser is defined",
       "duration": 2,
       "currentRetry": 0,
-      "err": {
-        "message": "The 'currentUser' variable must contain a string: expected undefined to be a string",
-        "showDiff": false,
-        "stack": "AssertionError: The 'currentUser' variable must contain a string: expected undefined to be a string\n    at Context.<anonymous> (test/indexTest.js:10:15)\n    at process.processImmediate (node:internal/timers:491:21)"
-      }
+      "err": {}
     },
     {
       "title": "contains \"Welcome to Flatbook, \"",
       "fullTitle": "index.js welcomeMessage contains \"Welcome to Flatbook, \"",
-      "duration": 0,
+      "duration": 2,
       "currentRetry": 0,
       "err": {
         "message": "expected 'currentUser!' to contain 'Welcome to Flatbook, '",
         "showDiff": false,
         "actual": "currentUser!",
-        "stack": "AssertionError: expected 'currentUser!' to contain 'Welcome to Flatbook, '\n    at Context.<anonymous> (test/indexTest.js:21:38)\n    at process.processImmediate (node:internal/timers:491:21)"
+        "stack": "AssertionError: expected 'currentUser!' to contain 'Welcome to Flatbook, '\n    at Context.<anonymous> (test/indexTest.js:20:38)\n    at process.processImmediate (node:internal/timers:491:21)"
       }
     },
     {
       "title": "contains the value of the 'currentUser' variable",
       "fullTitle": "index.js welcomeMessage contains the value of the 'currentUser' variable",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "message": "expected 'currentUser!' to contain undefined",
+        "message": "expected 'currentUser!' to contain 'Grace Hopper'",
         "showDiff": false,
         "actual": "currentUser!",
-        "stack": "AssertionError: expected 'currentUser!' to contain undefined\n    at Context.<anonymous> (test/indexTest.js:25:38)\n    at process.processImmediate (node:internal/timers:491:21)"
+        "stack": "AssertionError: expected 'currentUser!' to contain 'Grace Hopper'\n    at Context.<anonymous> (test/indexTest.js:24:38)\n    at process.processImmediate (node:internal/timers:491:21)"
       }
     },
     {
@@ -64,10 +60,7 @@
       "fullTitle": "index.js excitedWelcomeMessage contains the value of the 'currentUser' variable",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: Cannot read properties of undefined (reading 'toUpperCase')\n    at Context.<anonymous> (test/indexTest.js:40:48)\n    at process.processImmediate (node:internal/timers:491:21)",
-        "message": "Cannot read properties of undefined (reading 'toUpperCase')"
-      }
+      "err": {}
     },
     {
       "title": "ends with an exclamation point",
@@ -89,8 +82,8 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "TypeError: Cannot read properties of undefined (reading '0')\n    at Context.<anonymous> (test/indexTest.js:56:39)\n    at process.processImmediate (node:internal/timers:491:21)",
-        "message": "Cannot read properties of undefined (reading '0')"
+        "stack": "TypeError: shortGreeting.push is not a function\n    at Context.<anonymous> (test/indexTest.js:58:37)\n    at process.processImmediate (node:internal/timers:491:21)",
+        "message": "shortGreeting.push is not a function"
       }
     },
     {
@@ -98,60 +91,33 @@
       "fullTitle": "index.js shortGreeting ends with an exclamation point",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected ' ' to equal '!'",
-        "showDiff": true,
-        "actual": " ",
-        "expected": "!",
-        "stack": "AssertionError: expected ' ' to equal '!'\n    at Context.<anonymous> (test/indexTest.js:64:43)\n    at process.processImmediate (node:internal/timers:491:21)"
-      }
+      "err": {}
     }
   ],
   "pending": [],
   "failures": [
     {
-      "title": "is defined",
-      "fullTitle": "index.js currentUser is defined",
-      "duration": 2,
-      "currentRetry": 0,
-      "err": {
-        "message": "The 'currentUser' variable must contain a string: expected undefined to be a string",
-        "showDiff": false,
-        "stack": "AssertionError: The 'currentUser' variable must contain a string: expected undefined to be a string\n    at Context.<anonymous> (test/indexTest.js:10:15)\n    at process.processImmediate (node:internal/timers:491:21)"
-      }
-    },
-    {
       "title": "contains \"Welcome to Flatbook, \"",
       "fullTitle": "index.js welcomeMessage contains \"Welcome to Flatbook, \"",
-      "duration": 0,
+      "duration": 2,
       "currentRetry": 0,
       "err": {
         "message": "expected 'currentUser!' to contain 'Welcome to Flatbook, '",
         "showDiff": false,
         "actual": "currentUser!",
-        "stack": "AssertionError: expected 'currentUser!' to contain 'Welcome to Flatbook, '\n    at Context.<anonymous> (test/indexTest.js:21:38)\n    at process.processImmediate (node:internal/timers:491:21)"
+        "stack": "AssertionError: expected 'currentUser!' to contain 'Welcome to Flatbook, '\n    at Context.<anonymous> (test/indexTest.js:20:38)\n    at process.processImmediate (node:internal/timers:491:21)"
       }
     },
     {
       "title": "contains the value of the 'currentUser' variable",
       "fullTitle": "index.js welcomeMessage contains the value of the 'currentUser' variable",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "message": "expected 'currentUser!' to contain undefined",
+        "message": "expected 'currentUser!' to contain 'Grace Hopper'",
         "showDiff": false,
         "actual": "currentUser!",
-        "stack": "AssertionError: expected 'currentUser!' to contain undefined\n    at Context.<anonymous> (test/indexTest.js:25:38)\n    at process.processImmediate (node:internal/timers:491:21)"
-      }
-    },
-    {
-      "title": "contains the value of the 'currentUser' variable",
-      "fullTitle": "index.js excitedWelcomeMessage contains the value of the 'currentUser' variable",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: Cannot read properties of undefined (reading 'toUpperCase')\n    at Context.<anonymous> (test/indexTest.js:40:48)\n    at process.processImmediate (node:internal/timers:491:21)",
-        "message": "Cannot read properties of undefined (reading 'toUpperCase')"
+        "stack": "AssertionError: expected 'currentUser!' to contain 'Grace Hopper'\n    at Context.<anonymous> (test/indexTest.js:24:38)\n    at process.processImmediate (node:internal/timers:491:21)"
       }
     },
     {
@@ -160,25 +126,19 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "TypeError: Cannot read properties of undefined (reading '0')\n    at Context.<anonymous> (test/indexTest.js:56:39)\n    at process.processImmediate (node:internal/timers:491:21)",
-        "message": "Cannot read properties of undefined (reading '0')"
-      }
-    },
-    {
-      "title": "ends with an exclamation point",
-      "fullTitle": "index.js shortGreeting ends with an exclamation point",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected ' ' to equal '!'",
-        "showDiff": true,
-        "actual": " ",
-        "expected": "!",
-        "stack": "AssertionError: expected ' ' to equal '!'\n    at Context.<anonymous> (test/indexTest.js:64:43)\n    at process.processImmediate (node:internal/timers:491:21)"
+        "stack": "TypeError: shortGreeting.push is not a function\n    at Context.<anonymous> (test/indexTest.js:58:37)\n    at process.processImmediate (node:internal/timers:491:21)",
+        "message": "shortGreeting.push is not a function"
       }
     }
   ],
   "passes": [
+    {
+      "title": "is defined",
+      "fullTitle": "index.js currentUser is defined",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
     {
       "title": "ends with an exclamation point!",
       "fullTitle": "index.js welcomeMessage ends with an exclamation point!",
@@ -194,6 +154,13 @@
       "err": {}
     },
     {
+      "title": "contains the value of the 'currentUser' variable",
+      "fullTitle": "index.js excitedWelcomeMessage contains the value of the 'currentUser' variable",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
       "title": "ends with an exclamation point",
       "fullTitle": "index.js excitedWelcomeMessage ends with an exclamation point",
       "duration": 0,
@@ -204,6 +171,13 @@
       "title": "contains \"Welcome, \"",
       "fullTitle": "index.js shortGreeting contains \"Welcome, \"",
       "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "ends with an exclamation point",
+      "fullTitle": "index.js shortGreeting ends with an exclamation point",
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     }

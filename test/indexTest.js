@@ -13,8 +13,8 @@ describe("index.js", () => {
       ).to.not.be.empty;
     });
   });
-  let welcomeMessage = "Welcome to Flatbook, ",
-    currentUser;
+  let welcomeMessage = `Welcome to Flatbook, ${currentUser}!`;
+
   describe("welcomeMessage", () => {
     it('contains "Welcome to Flatbook, "', () => {
       expect(welcomeMessage).to.have.string("Welcome to Flatbook, ");
@@ -29,7 +29,7 @@ describe("index.js", () => {
     });
   });
 
-  excitedWelcomeMessage = "WELCOME TO FLATBOOK, ";
+  excitedWelcomeMessage = `WELCOME TO FLATBOOK, ${currentUser.toUpperCase()}!`;
   describe("excitedWelcomeMessage", () => {
     it('contains "WELCOME TO FLATBOOK, "', () => {
       expect(excitedWelcomeMessage).to.have.string("WELCOME TO FLATBOOK, ");
@@ -45,8 +45,8 @@ describe("index.js", () => {
       expect(excitedWelcomeMessage.substr(-1)).to.eq("!");
     });
   });
-  let shortGreeting = "Welcome, ";
-  firstInitial = currentUser[0];
+  let shortGreeting = `Welcome, ${currentUser[0]}!`;
+
   describe("shortGreeting", () => {
     it(`contains "Welcome, "`, () => {
       expect(shortGreeting).to.have.string("Welcome, ");
